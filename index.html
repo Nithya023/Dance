@@ -4,173 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traditional Dances of India</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Georgia', serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff8e1;
-            color: #4e342e;
-        }
-        header {
-            background-color: #bf360c;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 2px;
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfaf6; /* Soft cream background for a traditional feel */
+            color: #334155; /* Dark slate gray text */
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .card {
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
-        .intro {
-            text-align: justify;
-            margin-bottom: 40px;
-            line-height: 1.6;
-            font-size: 1.1em;
-            border-bottom: 2px solid #ffcc80;
-            padding-bottom: 20px;
+        .card:hover {
+            transform: translateY(-8px); /* More pronounced lift on hover */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
         }
-        .dance-section {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #fff3e0;
-            border-radius: 8px;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
+        .section-title {
+            color: #4B0082; /* Deeper Indigo for titles */
+            font-weight: 700;
+            margin-bottom: 1rem;
         }
-        .dance-section:hover {
-            transform: translateY(-5px);
-        }
-        .dance-section:nth-child(even) {
-            flex-direction: row-reverse;
-            background-color: #ffe0b2;
-        }
-        .dance-section img {
-            width: 250px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin: 0 30px;
-            border: 3px solid #ffab40;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        }
-        .dance-content {
-            flex: 1;
-        }
-        .dance-content h2 {
-            color: #d84315;
-            font-size: 1.8em;
-            margin-top: 0;
-            border-bottom: 1px dashed #ffab40;
-            padding-bottom: 5px;
-        }
-        .dance-content p {
-            line-height: 1.5;
-            margin-bottom: 15px;
+        .text-gradient {
+            background: linear-gradient(to right, #E06666, #B09FD8, #4682B4, #FF8C00); /* Deeper Pink, Lavender, SteelBlue, DarkOrange */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .explore-button {
             display: inline-block;
-            background-color: #ff5722;
-            color: #ffffff;
-            padding: 10px 20px;
+            background-color: #4B0082; /* Deeper Indigo button */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            font-weight: bold;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .explore-button:hover {
-            background-color: #e64a19;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            background-color: #bf360c;
-            color: #ffffff;
-            font-size: 0.9em;
+            background-color: #3A0066; /* Even darker Indigo on hover */
+            transform: translateY(-2px);
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Traditional Dances of India</h1>
-    </header>
-
+<body class="antialiased">
     <div class="container">
-        <section class="intro">
-            <h2>Welcome to the World of Indian Dance!</h2>
-            <p>India, a land of vibrant diversity, boasts a rich cultural tapestry woven with centuries of history, traditions, and artistic expressions...</p>
-        </section>
+        <!-- Header Section -->
+        <header class="text-center py-8 md:py-12 bg-white rounded-xl shadow-lg mb-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gradient mb-4">
+                The Soulful Rhythms of India: A Dance Heritage
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                <strong>India: A Tapestry of Culture</strong><br>
+                India, a land steeped in millennia of history and vibrant traditions, is a kaleidoscope of cultures, languages, and artistic expressions. Its rich heritage is a testament to its enduring philosophical depth and artistic brilliance.
+                <br><br>
+                <strong>Dance: The Living Narratives</strong><br>
+                At the heart of India's cultural legacy lies an unparalleled tradition of dance. More than mere entertainment, Indian traditional dances are living narratives, embodying ancient myths, spiritual devotion, and the very essence of human emotion. Passed down through generations, these art forms connect performers and audiences to a timeless cultural tapestry, reflecting the soul of the nation.
+            </p>
+        </header>
 
-        <section class="dance-section">
-            <img src="bharatanatyam.jpg" alt="Bharatanatyam dancer">
-            <div class="dance-content">
-                <h2>Bharatanatyam</h2>
-                <p>Originating from Tamil Nadu, Bharatanatyam is known for intricate footwork and expressive hand gestures.</p>
-                <a href="#" class="explore-button">Explore More</a>
-            </div>
-        </section>
+        <!-- Main Content Grid -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <section class="dance-section">
-            <img src="kathak.jpg" alt="Kathak dancer">
-            <div class="dance-content">
-                <h2>Kathak</h2>
-                <p>Kathak from North India is known for pirouettes, rhythmic footwork, and storytelling through dance.</p>
-                <a href="#" class="explore-button">Explore More</a>
+            <!-- Bharatanatyam Card -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <h2 class="section-title text-2xl">Bharatanatyam</h2>
+                    <img src="https://t3.ftcdn.net/jpg/04/67/58/22/360_F_467582239_Y3vnaMCkrRA3xKqYIQnWgRerhIeYz3s6.jpg" alt="Bharatanatyam Dancer" class="w-full h-auto rounded-md mb-4" />
+                    <p class="text-gray-700 mb-4">
+                        Originating from Tamil Nadu. Known for its intricate footwork and expressive hand gestures.
+                    </p>
+                </div>
+                <a href="about.html" class="explore-button text-center">Explore More</a>
             </div>
-        </section>
 
-        <section class="dance-section">
-            <img src="kathakali.jpg" alt="Kathakali dancer">
-            <div class="dance-content">
-                <h2>Kathakali</h2>
-                <p>From Kerala, Kathakali is noted for its colorful makeup, elaborate costumes, and expressive storytelling.</p>
-                <a href="#" class="explore-button">Explore More</a>
+            <!-- Kathak Card -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <h2 class="section-title text-2xl">Kathak</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Shinjini_kathak_dance_indian_classical_in_traditional_attire.jpg" alt="Kathak Dancer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/B09FD8/ffffff?text=Kathak+Spinner';">
+                    <p class="text-gray-700 mb-4">
+                        Originating from Uttar Pradesh. Characterized by fast pirouettes and rhythmic footwork.
+                    </p>
+                </div>
+                <a href="about.html" class="explore-button text-center">Explore More</a>
             </div>
-        </section>
 
-        <section class="dance-section">
-            <img src="odissi.jpg" alt="Odissi dancer">
-            <div class="dance-content">
-                <h2>Odissi</h2>
-                <p>Odissi from Odisha is recognized by its lyrical grace, sculpturesque poses, and devotional themes.</p>
-                <a href="#" class="explore-button">Explore More</a>
+            <!-- Odissi Card -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <h2 class="section-title text-2xl">Odissi</h2>
+                    <img src="https://blog.ksom.ac.in/wp-content/uploads/2021/06/odissi.jpg" alt="Odissi Dancer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/4682B4/ffffff?text=Odissi+Pose';">
+                    <p class="text-gray-700 mb-4">
+                        Originating from Odisha. Known for its lyrical beauty and graceful tribhanga posture.
+                    </p>
+                </div>
+                <a href="about.html" class="explore-button text-center">Explore More</a>
             </div>
-        </section>
 
-        <section class="dance-section">
-            <img src="manipuri.jpg" alt="Manipuri dancer">
-            <div class="dance-content">
-                <h2>Manipuri</h2>
-                <p>Manipuri dance from Manipur features soft, flowing movements and themes of Radha-Krishna devotion.</p>
-                <a href="#" class="explore-button">Explore More</a>
+            <!-- Kathakali Card -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <h2 class="section-title text-2xl">Kathakali</h2>
+                    <img src="https://images.pexels.com/photos/20258867/pexels-photo-20258867.jpeg?cs=srgb&dl=pexels-adhwaith-chandran-214377112-20258867.jpg&fm=jpg" alt="Kathakali Performer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/FF8C00/ffffff?text=Kathakali+Mask';">
+                    <p class="text-gray-700 mb-4">
+                        Originating from Kerala. Features elaborate makeup and dramatic facial masks.
+                    </p>
+                </div>
+                <a href="about.html" class="explore-button text-center">Explore More</a>
             </div>
-        </section>
 
-        <section class="dance-section">
-            <img src="kuchipudi.jpg" alt="Kuchipudi dancer">
-            <div class="dance-content">
-                <h2>Kuchipudi</h2>
-                <p>From Andhra Pradesh, Kuchipudi blends fast footwork with dramatic expressions and musical narration.</p>
-                <a href="#" class="explore-button">Explore More</a>
+            <!-- Manipuri Card -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <h2 class="section-title text-2xl">Manipuri</h2>
+                    <img src="https://serenademagazine.com/content/images/size/w1200/wp-content/uploads/2024/01/rasa_lila_in_manipuri_dance_style.jpg" alt="Manipuri Dancer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/E06666/ffffff?text=Manipuri+Grace';">
+                    <p class="text-gray-700 mb-4">
+                        Originating from Manipur. Characterized by gentle, fluid movements and soft undulations.
+                    </p>
+                </div>
+                <a href="about.html" class="explore-button text-center">Explore More</a>
             </div>
-        </section>
+
+            <!-- Kuchipudi Card -->
+            <div class="card flex flex-col justify-between">
+                <div>
+                    <h2 class="section-title text-2xl">Kuchipudi</h2>
+                    <img src="https://media.istockphoto.com/id/507419740/photo/girl-dancing-classical-indin-dance-kuchipudi.jpg?b=1&s=612x612&w=0&k=20&c=7eXThLviAlsCJ6XOoeuN13SwWhcPxmLeWaP5kuP8GDs=" alt="Kuchipudi Dancer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/B09FD8/ffffff?text=Kuchipudi+Tarangam';">
+                    <p class="text-gray-700 mb-4">
+                        Originating from Andhra Pradesh. Known for combining dance, drama, and music.
+                    </p>
+                </div>
+                <a href="about.html" class="explore-button text-center">Explore More</a>
+            </div>
+
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="text-center py-6 mt-8 bg-white rounded-xl shadow-lg">
+            <p class="text-gray-600 text-sm">
+                Discover the vibrant and spiritual world of India's traditional dance forms.
+            </p>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Traditional Dances of India. All rights reserved.</p>
-    </footer>
 </body>
 </html>
