@@ -41,20 +41,25 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .explore-button {
-            display: inline-block;
+        /* Removed .explore-button styles as they are no longer needed for individual cards */
+        .final-explore-button {
+            display: block; /* Make it a block element to center */
+            width: fit-content; /* Adjust width to content */
+            margin: 2rem auto; /* Center horizontally and add vertical margin */
             background-color: #4B0082; /* Deeper Indigo button */
             color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem; /* More rounded */
             text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 700;
+            font-size: 1.25rem;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
-        .explore-button:hover {
-            background-color: #3A0066; /* Even darker Indigo on hover */
-            transform: translateY(-2px);
+        .final-explore-button:hover {
+            background-color: #3A0066;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -83,10 +88,10 @@
                     <h2 class="section-title text-2xl">Bharatanatyam</h2>
                     <img src="https://t3.ftcdn.net/jpg/04/67/58/22/360_F_467582239_Y3vnaMCkrRA3xKqYIQnWgRerhIeYz3s6.jpg" alt="Bharatanatyam Dancer" class="w-full h-auto rounded-md mb-4" />
                     <p class="text-gray-700 mb-4">
-                        Originating from Tamil Nadu. Known for its intricate footwork and expressive hand gestures.
+                        Originating from Tamil Nadu. Known for its intricate footwork and expressive hand gestures. It is often performed as a solo dance, showcasing a dancer's versatility.
                     </p>
                 </div>
-                <a href="about.html" class="explore-button text-center">Explore More</a>
+                <!-- Removed individual Explore More button -->
             </div>
 
             <!-- Kathak Card -->
@@ -95,10 +100,10 @@
                     <h2 class="section-title text-2xl">Kathak</h2>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Shinjini_kathak_dance_indian_classical_in_traditional_attire.jpg" alt="Kathak Dancer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/B09FD8/ffffff?text=Kathak+Spinner';">
                     <p class="text-gray-700 mb-4">
-                        Originating from Uttar Pradesh. Characterized by fast pirouettes and rhythmic footwork.
+                        Originating from Uttar Pradesh. Characterized by fast pirouettes and rhythmic footwork. Dancers wear ghungroos (ankle bells) to emphasize the complex footwork.
                     </p>
                 </div>
-                <a href="about.html" class="explore-button text-center">Explore More</a>
+                <!-- Removed individual Explore More button -->
             </div>
 
             <!-- Odissi Card -->
@@ -107,10 +112,10 @@
                     <h2 class="section-title text-2xl">Odissi</h2>
                     <img src="https://blog.ksom.ac.in/wp-content/uploads/2021/06/odissi.jpg" alt="Odissi Dancer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/4682B4/ffffff?text=Odissi+Pose';">
                     <p class="text-gray-700 mb-4">
-                        Originating from Odisha. Known for its lyrical beauty and graceful tribhanga posture.
+                        Originating from Odisha. Known for its lyrical beauty and graceful tribhanga posture. It often depicts themes of devotion to Lord Jagannath.
                     </p>
                 </div>
-                <a href="about.html" class="explore-button text-center">Explore More</a>
+                <!-- Removed individual Explore More button -->
             </div>
 
             <!-- Kathakali Card -->
@@ -119,10 +124,10 @@
                     <h2 class="section-title text-2xl">Kathakali</h2>
                     <img src="https://images.pexels.com/photos/20258867/pexels-photo-20258867.jpeg?cs=srgb&dl=pexels-adhwaith-chandran-214377112-20258867.jpg&fm=jpg" alt="Kathakali Performer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/FF8C00/ffffff?text=Kathakali+Mask';">
                     <p class="text-gray-700 mb-4">
-                        Originating from Kerala. Features elaborate makeup and dramatic facial masks.
+                        Originating from Kerala. Features elaborate makeup and dramatic facial masks. Performers use intricate mudras to convey epic narratives.
                     </p>
                 </div>
-                <a href="about.html" class="explore-button text-center">Explore More</a>
+                <!-- Removed individual Explore More button -->
             </div>
 
             <!-- Manipuri Card -->
@@ -131,10 +136,10 @@
                     <h2 class="section-title text-2xl">Manipuri</h2>
                     <img src="https://serenademagazine.com/content/images/size/w1200/wp-content/uploads/2024/01/rasa_lila_in_manipuri_dance_style.jpg" alt="Manipuri Dancer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/E06666/ffffff?text=Manipuri+Grace';">
                     <p class="text-gray-700 mb-4">
-                        Originating from Manipur. Characterized by gentle, fluid movements and soft undulations.
+                        Originating from Manipur. Characterized by gentle, fluid movements and soft undulations. It often revolves around the Radha-Krishna love story, particularly the Raas Leela.
                     </p>
                 </div>
-                <a href="about.html" class="explore-button text-center">Explore More</a>
+                <!-- Removed individual Explore More button -->
             </div>
 
             <!-- Kuchipudi Card -->
@@ -143,19 +148,21 @@
                     <h2 class="section-title text-2xl">Kuchipudi</h2>
                     <img src="https://media.istockphoto.com/id/507419740/photo/girl-dancing-classical-indin-dance-kuchipudi.jpg?b=1&s=612x612&w=0&k=20&c=7eXThLviAlsCJ6XOoeuN13SwWhcPxmLeWaP5kuP8GDs=" alt="Kuchipudi Dancer" class="w-full h-auto rounded-md mb-4" onerror="this.onerror=null;this.src='https://placehold.co/400x250/B09FD8/ffffff?text=Kuchipudi+Tarangam';">
                     <p class="text-gray-700 mb-4">
-                        Originating from Andhra Pradesh. Known for combining dance, drama, and music.
+                        Originating from Andhra Pradesh. Known for combining dance, drama, and music. A unique element is the 'Tarangam' where dancers perform on a brass plate.
                     </p>
                 </div>
-                <a href="about.html" class="explore-button text-center">Explore More</a>
+                <!-- Removed individual Explore More button -->
             </div>
 
         </main>
 
         <!-- Footer Section -->
-        <footer class="text-center py-6 mt-8 bg-white rounded-xl shadow-lg">
-            <p class="text-gray-600 text-sm">
+        <footer class="text-center py-6 mt-8 bg-white rounded-xl shadow-lg flex flex-col items-center">
+            <p class="text-gray-600 text-sm mb-4">
                 Discover the vibrant and spiritual world of India's traditional dance forms.
             </p>
+            <!-- The single "Explore All Dances Now" button remains -->
+            <a href="about.html" class="final-explore-button">Explore All Dances Now</a>
         </footer>
     </div>
 </body>
